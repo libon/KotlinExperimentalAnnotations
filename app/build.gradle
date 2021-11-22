@@ -33,7 +33,17 @@ android {
 
 kotlin {
     sourceSets {
-        all {
+        test {
+            languageSettings {
+                optIn("kotlin.time.ExperimentalTime")
+            }
+        }
+        debugUnitTest {
+            languageSettings {
+                optIn("kotlin.time.ExperimentalTime")
+            }
+        }
+        releaseUnitTest {
             languageSettings {
                 optIn("kotlin.time.ExperimentalTime")
             }

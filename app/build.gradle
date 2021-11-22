@@ -35,17 +35,17 @@ kotlin {
     sourceSets {
         test {
             languageSettings {
-                optIn("kotlin.time.ExperimentalTime")
+                optIn("kotlin.RequiresOptIn")
             }
         }
         debugUnitTest {
             languageSettings {
-                optIn("kotlin.time.ExperimentalTime")
+                optIn("kotlin.RequiresOptIn")
             }
         }
         releaseUnitTest {
             languageSettings {
-                optIn("kotlin.time.ExperimentalTime")
+                optIn("kotlin.RequiresOptIn")
             }
         }
     }

@@ -11,8 +11,8 @@ Sample reproduction project for issues with warnings using kotlin experimental a
     - No warning for the test class
 * Actual behavior:
   - Command line (`./gradlew clean assembleDebug testDebugUnitTest`):
-    - ✅ Warning for the app class
-    - ❌Warning for the test class
-  - Android Studio:
-    - ❌Warning for the app class
+    - ❌No warning for the app class
     - ✅No warning for the test class
+  - Android Studio:
+    - ✅Warning for the app class
+    - ❌Warning for the test class

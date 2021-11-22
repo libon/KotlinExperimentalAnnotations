@@ -3,8 +3,7 @@ package ca.rmen.kotlinexperimentalannotations
 import org.junit.Test
 
 import org.junit.Assert.*
-import kotlin.time.Duration
-import kotlin.time.ExperimentalTime
+import kotlin.time.TimeSource
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -12,8 +11,7 @@ import kotlin.time.ExperimentalTime
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 class ExampleUnitTest {
-    @ExperimentalTime
-    val thisShouldBeOk = Duration.seconds(5)
+    val thisShouldBeOk = TimeSource.Monotonic.markNow()
 
     @Test
     fun addition_isCorrect() {

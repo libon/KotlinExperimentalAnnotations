@@ -1,9 +1,7 @@
 package ca.rmen.kotlinexperimentalannotations
 
-import kotlin.time.Duration
-import kotlin.time.ExperimentalTime
+import kotlin.time.TimeSource
 
 class SomeAppClass {
-    @ExperimentalTime
-    val thisIsExperimental = Duration.seconds(5)
+    val thisIsExperimental = TimeSource.Monotonic.markNow()
 }
